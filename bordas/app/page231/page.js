@@ -1,32 +1,25 @@
-import React from "react";
-
-function App() {
-
-  const divVermelha = {
-    backgroundColor: "red",
-    width: "700px",
-    padding: "0px",
-    margin: "20px auto" // centraliza o bloco
-  };
-
-  const divVerde = {
-    backgroundColor: "green",
-    width: "700px",
-    padding: "25px",
-    margin: "20px auto" // centraliza o bloco
-  };
-
+export default function Pg231() {
   return (
     <div>
-      <div style={divVermelha}>
-        Div vermelha
+
+      <div style={{
+        backgroundColor: "red",
+        width: "700px",
+        padding: "0px",
+        margin: "20px auto",
+      }}>
+        <p style={{ color: "white" }}>DIV Vermelho — padding: 0px</p>
       </div>
 
-      <div style={divVerde}>
-        Div verde
+      <div style={{
+        backgroundColor: "green",
+        width: "700px",
+        padding: "25px",
+        margin: "20px auto",
+      }}>
+        <p style={{ color: "white" }}>DIV Verde — padding: 25px</p>
       </div>
+
     </div>
   );
 }
-
-export default App;
